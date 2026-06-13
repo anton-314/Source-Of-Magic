@@ -26,7 +26,16 @@ jobs:
             --output dist/source-of-magic.pdf \
             --pdf-engine=xelatex \
             --metadata title="Source of Magic" \
-            --metadata author="Source of Magic Contributors"
+            --metadata author="Source of Magic Contributors" \
+            --toc
+
+      - name: Build EPUB
+        run: |
+          pandoc dist/source-of-magic.md \
+            --output dist/source-of-magic.epub \
+            --metadata title="Source of Magic" \
+            --metadata author="Source of Magic Contributors" \
+            --toc
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
