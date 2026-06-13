@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "manuscript/**"
   workflow_dispatch:
 
 jobs:
