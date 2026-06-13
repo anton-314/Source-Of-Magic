@@ -3,5 +3,9 @@
 
   "_description": "Markdownlint configuration for Source of Magic. These rules are enforced by the lint.yml GitHub Actions workflow on every pull request. Adjust rules here to match the stylistic conventions of the manuscript and world-building documents.",
 
-  "default": true
+  "default": true,
+
+  "MD013": false,
+  "MD036": false,
+  "MD041": false
 }

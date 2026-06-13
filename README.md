@@ -1,11 +1,10 @@
 # Source of Magic 🪄💻
 
-An open-source, community-driven epic fantasy novel engineered through Git. 
+An open-source, community-driven epic fantasy novel engineered through Git.
 
 ---
 
 ## 📖 Project Description
-
 
 **Source of Magic** is a collaborative writing experiment. It treats worldbuilding as documentation, characters as modules, and the plot as source code. By utilizing version control, this project aims to build a deeply complex, logically consistent fantasy universe where every contributor can leave their mark, propose alternative subplots via branches, and help peer-review the narrative into a seamless masterpiece.
 
@@ -25,3 +24,4 @@ source-of-magic/
 │   ├── chapter-02.md
 │   └── chapter-03.md
 └── README.md
+```
