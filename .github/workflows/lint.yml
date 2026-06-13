@@ -5,6 +5,7 @@ on:
     paths:
       - "**/*.md"
       - ".markdownlint.json"
+  workflow_dispatch:
 
 jobs:
   markdownlint:
