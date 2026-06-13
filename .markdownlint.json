@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json",
+
+  "_description": "Markdownlint configuration for Source of Magic. These rules are enforced by the lint.yml GitHub Actions workflow on every pull request. Adjust rules here to match the stylistic conventions of the manuscript and world-building documents.",
+
+  "default": true
+}

@@ -1,0 +1,36 @@
+name: Build Book
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "manuscript/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Concatenate chapters
+        run: |
+          mkdir -p dist
+          cat manuscript/chapter-*.md > dist/source-of-magic.md
+
+      - name: Build PDF
+        run: |
+          pandoc dist/source-of-magic.md \
+            --output dist/source-of-magic.pdf \
+            --pdf-engine=xelatex \
+            --metadata title="Source of Magic" \
+            --metadata author="Source of Magic Contributors"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-of-magic-book
+          path: dist/
